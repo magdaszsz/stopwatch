@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Space+Mono&display=swap");
+
+body {
+  background: #130f40;
+  color: white;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.digits {
+  display: flex;
+}
+
+.stopwatch {
+  font-size: 8rem;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.buttons {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: "Lora", serif;
+  align-self: center;
+  padding: 0.5em 3em;
+  border: none;
+  color: #dff9fb;
+  border-radius: 100vh;
+  background: rgb(34, 193, 195);
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.digits > div {
+  background: #192a56;
+  width: 13rem;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
