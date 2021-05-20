@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Space+Mono&display=swap");
 
 body {
-  background: #130f40;
+ background: #1e272e;
   color: white;
   display: grid;
   place-items: center;
@@ -23,21 +23,40 @@ body {
   justify-content: center;
 }
 
+.glow {
+  color: white;
+  text-shadow: 
+    0 0 7px #fff,
+    0 0 21px #d2dae2,
+    0 0 32px #d2dae2,
+    0 0 42px #d2dae2,
+    0 0 62px #d2dae2;
+  }
+
 button {
+  border: none;
   font-family: "Lora", serif;
   align-self: center;
   padding: 0.5em 3em;
-  border: none;
   color: #dff9fb;
   border-radius: 100vh;
-  background: rgb(34, 193, 195);
+  background: transparent;
   cursor: pointer;
   display: inline-block;
   margin-left: 1rem;
+  text-shadow: 0 0 3px #d2dae2;
+  transition: all 0.3s ease;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+    inset 0 0 5px #d2dae2;
+}
+
+button:hover {
+  box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+    inset 0 0 5px #d2dae2, 0 0 12px #d2dae2;
 }
 
 .digits > div {
-  background: #192a56;
   width: 13rem;
   text-align: center;
   padding: 0.2rem 0.5rem;
