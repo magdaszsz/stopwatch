@@ -4,7 +4,7 @@ const stopBtn = document.querySelector(".stop");
 const minutesDiv = document.querySelector(".minutes");
 const secondsDiv = document.querySelector(".seconds");
 const milisecondsDiv = document.querySelector(".miliseconds");
-const allDigits = document.querySelectorAll(".digits > div");
+const allDigits = document.querySelectorAll(".number");
 
 startBtn.addEventListener("click", startStopwatch);
 pauseBtn.addEventListener("click", pauseStopwatch);

@@ -3,40 +3,57 @@
 body {
  background: #1e272e;
   color: white;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   height: 100vh;
 }
 
 .digits {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 
 .stopwatch {
   font-size: 8rem;
   font-family: "Anonymous Pro", monospace;
+  
 }
 
 .buttons {
   margin-top: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .glow {
   color: white;
   text-shadow: 
-    0 0 7px #fff,
-    0 0 21px #d2dae2,
-    0 0 32px #d2dae2,
-    0 0 42px #d2dae2,
-    0 0 62px #d2dae2;
-  }
+  0 0 7px #fff,
+  0 0 21px #d2dae2,
+  0 0 32px #d2dae2,
+  0 0 42px #d2dae2,
+  0 0 62px #d2dae2;
+}
 
 button {
   border: none;
   font-family: "Lora", serif;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 0.5em 3em;
   color: #dff9fb;
   border-radius: 100vh;
@@ -45,19 +62,36 @@ button {
   display: inline-block;
   margin-left: 1rem;
   text-shadow: 0 0 3px #d2dae2;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   letter-spacing: 0.2rem;
-  box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
-    inset 0 0 5px #d2dae2;
+  -webkit-box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+  inset 0 0 5px #d2dae2;
+          box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+  inset 0 0 5px #d2dae2;
+  margin-bottom: 1rem;
 }
 
 button:hover {
-  box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
-    inset 0 0 5px #d2dae2, 0 0 12px #d2dae2;
+  -webkit-box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+  inset 0 0 5px #d2dae2, 0 0 12px #d2dae2;
+          box-shadow: 0 0 3px #fff, 0 0 5px #d2dae2, 0 0 8px #d2dae2,
+  inset 0 0 5px #d2dae2, 0 0 12px #d2dae2;
 }
 
 .digits > div {
   width: 13rem;
   text-align: center;
   padding: 0.2rem 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .digits {
+  font-size: 3rem;
+  width: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 }
