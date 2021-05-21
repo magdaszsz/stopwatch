@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Space+Mono&display=swap");
 
 body {
- background: #1e272e;
+  background: #1e272e;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -15,13 +15,16 @@ body {
   display: flex;
   margin: 0 auto;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
 .stopwatch {
-  font-size: 8rem;
+  font-size: 10vw;
   font-family: "Anonymous Pro", monospace;
   
 }
@@ -81,17 +84,8 @@ button:hover {
 }
 
 .digits > div {
-  width: 13rem;
+  width: 13vw;
   text-align: center;
   padding: 0.2rem 0.5rem;
 }
 
-@media (max-width: 800px) {
-  .digits {
-  font-size: 3rem;
-  width: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-}
